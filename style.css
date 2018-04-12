@@ -1,12 +1,12 @@
 h1{
   color: grey;
-  font-size: 100px;
-  border: 3px solid orange;
+  font-size: 75px;
+  border: 1px solid black;
 }
 
 h2{
   color: black;
-  font-size: 50px;
+  font-size: 35px;
   font-family: arial;
 }
 
@@ -18,16 +18,39 @@ h3{
 h4{
   color: white;
   font-size: 15px;
-  background-color: orange;
   padding: 10px;
   background: lightblue;
 }
 
-a
-{
-  color: green;
-  font-size: 15px;
+h5{
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  background: lightgreen;
 }
+
+h6{
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  background: grey;
+}
+
+a:visited {
+     color: grey;
+  }
+
+  a:link {
+     text-decoration: none;
+  }
+
+  a:visited {
+     text-decoration: none;
+  }
+
+  a:hover {
+     text-decoration: underline;
+  }
 
 p{
   color: black;
@@ -36,15 +59,77 @@ p{
 
 img{
   width: 100%;
-  border: 1px solid black;
+  border: ,5px solid black;
+  }
+
+.container {
+ /*flexbox*/
+  display: flex;
+  justify-content: center;
+
+ /*styling*/
+  background: #eef1d3;
 }
 
-.listan {
+.topp{
+}
+
+.topprubrik {
+  background-image: url("https://cached-images.bonnier.news/cms30/UploadedImages/2018/3/28/23f8db43-a8d1-4874-9b3d-dd4e061316fc/bigOriginal.jpg?interpolation=lanczos-none&downsize=*:568&output-quality=80&output-format=webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-decoration-color: orange;
+  text-shadow: 2px 2px orange;
+  }
+
+.byline{
+  }
+
+.toppuff{
+  justify-content: center;
+}
+
+.tvakolumner{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 0px 10px 5px 10px;
+}
+
+.tvakolumnertext{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 0px 10px 5px 10px;
+}
+
+.puff{
+  margin: 10px;
+}
+
+.senaste{
   background-color: lightgrey;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0px 5px 0px 5px;
 }
 
-.topp {
-  image-orientation: padding-right
-}
+@media (max-width: 600px) {
+  .tvakolumner{
+  display: block;
+  background-color: lightgrey;
+  padding: 0px;
+  margin: 0px;
+  }
+
+  h1 {
+  font-size: 40px
+  }
+
+  h3 {
+  font-size: 15px
+  }
+
+  h4 {
+    font-size: 12px
+  }
+ }

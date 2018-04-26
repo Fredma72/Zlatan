@@ -6,13 +6,13 @@ h1{
 
 h2{
   color: black;
-  font-size: 35px;
+  font-size: 25px;
   font-family: arial;
 }
 
 h3{
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 h4{
@@ -91,22 +91,19 @@ img{
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  padding: 0px 10px 5px 10px;
+  padding: 0px 5px 5px 5px;
+  width: 100%
 }
 
-.tvakolumnertext{
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 0px 10px 5px 10px;
+.puffvanster{
+  width: 45%;
 }
 
-.puff{
-  margin: 10px;
+.puffhoger{
+  width: 45%;
 }
 
 .senaste{
-  background-color: lightgrey;
   padding: 0px 5px 10px 5px;
 }
 
@@ -116,6 +113,15 @@ img{
   background-color: lightgrey;
   padding: 0px;
   margin: 0px;
+  width: 100%;
+  }
+
+  .puffvanster{
+    width: 100%;
+  }
+
+  .puffhoger{
+    width: 100%;
   }
 
   h1 {
